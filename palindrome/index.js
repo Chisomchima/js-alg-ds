@@ -5,7 +5,16 @@
 //   palindrome("Madam") === true
 //   palindrome("love") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+  // first reverse the string
+  let reverseStr = str.split('').reverse().join('');
+  // then check if the string equals reverse string in losercase
+  if(str.toLowerCase() === reverseStr.toLowerCase()){
+    return true
+  }else {
+    return false
+  }
+}
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \

@@ -5,7 +5,19 @@
 //   capitalize("I'm a little tea pot") --> 'I'm A Little Tea Pot'
 //   capitalize('sHoRt AnD sToUt') --> 'Short And Stout'
 
-function capitalize(str) {}
+function capitalize(str) {
+  // turn the string to an array
+  let strArr = str.split(' ');
+  let newArr = [];
+  const newWord =''
+  for (let i = 0; i < strArr.lenghth; i++) {
+    newWord = strArr[i]
+  } 
+console.log(newWord)
+ return newArr.join(' ')
+}
+
+capitalize('chisom')
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
 // \__   __/(  ____ \(  ____ \\__   __/  (  ____ \(  ___  )(  ____ \(  ____ \(  ____ \
