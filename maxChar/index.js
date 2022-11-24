@@ -4,7 +4,21 @@
 // maxChar("1337") === "3"
 
 function maxChar(str) {
-  
+  // create a max count object
+  let maxCountObj = {}
+  let maxLetter = ''
+  let maxNumber = 0
+// fill out the object
+  for(let i = 0; i < str.length; i++) {
+    let letter = str[i]
+    maxCountObj[letter] = maxCountObj[letter] + 1 || 1
+// check if max count obj is greater than maxnumber and set the maxletter and max number
+  if(maxCountObj[letter] > maxNumber) {
+    maxLetter = letter
+    maxNumber = maxCountObj[letter]
+  }
+ }
+ return maxLetter
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
