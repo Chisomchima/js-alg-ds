@@ -18,6 +18,7 @@ function maxChar(str) {
     maxNumber = maxCountObj[letter]
   }
  }
+ // RETURN THE MAX LETTER
  return maxLetter
 }
 
