@@ -21,6 +21,7 @@ function reverse(str) {
 	let newString = '';
 	for(let i=0; i<str.length; i++) {
 		let letter = str[i];
+		// place the letter before newstring
 		newString = letter + newString;
 	}
 	return newString
